@@ -32,11 +32,39 @@ System.out.println(Add.addition(7.8, 9.2, 4.8));
  That base function is said to be overridden.
 
 
+class Parent {
 
+void print(){
+System.out.println("parent class");
+}
 
+}
 
+class subclass1 extends Parent {
 
+void print()
+{
+System.out.println("subclass 1");
+}
+}
 
+class subclass2 extends Parent {
 
+void print(){
+System.out.println("subclass 2");
+}
+}
 
+class Test {
+public static void main (string args[])
+{
+Parent obj;
 
+obj = new subclass1();
+obj.print();                     // print subclass 1
+
+obj = new subclass2();
+obj.print();                    // print subclass 2
+
+}
+}
