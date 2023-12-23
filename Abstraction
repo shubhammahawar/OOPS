@@ -4,7 +4,7 @@ The trivial or non-essential units are not displayed to the user. Ex: A car is v
 
 It is used to achieve multiple inheritance.
 It is used to achieve loose coupling.
-It is used to achieve abstraction
+
 
 1. Using Abstract Class  - gives 0-100% abstraction
 
