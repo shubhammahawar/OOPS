@@ -1,0 +1,29 @@
+Encapsulation : 
+
+It is defined as the wrapping up of data under a single unit. It is the mechanism that binds together the code and the data it manipulates.
+Technically, in encapsulation, the variables or the data in a class is hidden from any other class and 
+can be accessed only through any member function of the class in which they are declared.
+
+Encapsulation can be achieved by declaring all the variables in a class as private and writing public methods in the class to set and get the values of the variables.
+
+class Student{
+
+private int rollId;
+
+public void setRollId(int id){
+this.rollId = id;
+}
+
+public int getRollId(){
+return rollId;
+}
+
+class Test {
+
+public static void main(String[]args){
+Student obj = new Student();
+obj.setRollId(5);
+System.out.println(obj.getRollId());
+}
+
+}
